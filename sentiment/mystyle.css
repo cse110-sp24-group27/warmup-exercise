@@ -15,3 +15,24 @@ fieldset {
     margin-right: 15px;
     cursor: pointer;
 }
+
+.rating input{
+    display: none;
+}
+/*Remove the option circle*/
+.rating label{
+    
+    font-size: 10mm;
+    margin:0;
+    
+}
+/*set the star*/
+.rating label:before{
+    content: '\2605';
+}
+/*add a star before the option circle*/
+
+.rating label:hover{
+    color: yellow;
+}
+/*if hover the star will change to yellow.*/
