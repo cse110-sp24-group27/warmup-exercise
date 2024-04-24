@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-    <head>
-        <title>Sentiment</title>
-        <meta name="Sentiment Rating" content="Sentiment rating">
-    </head>
-    <body>
-        <input type="range" min="1" max="5" value="5">
+<html lang="en">
+
+</html>
+
+<head>
+    <title>Sentiment</title>
+    <meta name="Sentiment Rating" content="Sentiment rating">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <!-- <input type="range" min="1" max="5" value="5">
         <br>
         <div class="rating">
             <span id="star1">&starf;</span>
@@ -15,6 +20,48 @@
             <span id="star5">&starf;</span>
         </div>
         <br>
-        <span class="text">No rating</span>
-    </body>
+        <span class="text">No rating</span> -->
+
+    <form>
+        <fieldset>
+            <legend>Sentiment Rating:</legend>
+            <div class="radio-button">
+                <input type="radio" id="1" name="sentiment">
+                <label for="1">Very Negative</label> <br>
+            </div>
+            <div class="radio-button">
+                <input type="radio" id="2" name="sentiment">
+                <label for="2">Negative</label> <br>
+            </div>
+            <div class="radio-button">
+                <input type="radio" id="3" name="sentiment">
+                <label for="3">Neutral</label> <br>
+            </div>
+            <div class="radio-button">
+                <input type="radio" id="4" name="sentiment">
+                <label for="4">Positive</label> <br>
+            </div>
+            <div class="radio-button">
+                <input type="radio" id="5" name="sentiment">
+                <label for="5">Very Positive</label> <br>
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="rating">
+        <label for="star1" id="label1"></label>
+        <input type="radio" id="star1" value="1" name="stars">
+        <label for="star2" id="label2"></label>
+        <input type="radio" id="star2" value="2" name="stars"> 
+        <label for="star3" id="label3"></label >
+        <input type="radio" id="star3" value="3" name="stars">
+        <label for="star4" id="label4"></label>
+        <input type="radio" id="star4" value="4" name="stars">
+        <label for="star5" id="label5"></label>
+        <input type="radio" id="star5" value="5" name="stars">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
