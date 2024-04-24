@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task List</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Task List</h1>
-    </header>
-    <script src="script.js"></script>
-    <main>
-        <!--Create a table for the task list-->
-        <!--Mark as completed | Task Name | Due Date | Priority-->
-        <!--At the last row of the table, an add button for adding a new task-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task List</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Task List</h1>
+        </header>
+        <script src="script.js"></script>
+        <main>
+            <!--Create a table for the task list-->
+            <!--Mark as completed | Task Name | Due Date | Priority-->
+            <!--At the last row of the table, an add button for adding a new task-->
 
-        <table class="task-list">
-            <!--Create the table headers-->
-            <tr>
-                <th class="table-header">Done</th>
-                <th class="table-header">Task</th>
-                <th class="table-header">Due Date</th>
-                <th class="table-header">Priority</th>
-            </tr>
-            <!--For each task, use tr to add row-->
-            <tr>
-                <td class="check-box"><input type="checkbox"/></td>
-                <td class="task-name"></td>
-                <td class="due-date"></td>
-                <td class="priority"></td>
-            </tr>
-        </table>
-        <button class="add-row" onclick="new_task()">+</button>
-        <div class="new-task-row">
-            <input type="text" id="form-name" placeholder="Enter task name">
-            <input type="date" id="form-date">
-            <select id="form-priority">
-                <option value="High">High</option>
-                <option value="Medium">Medium</option>
-                <option value="Low">Low</option>
-            </select>
-            <button onclick="add_task()">Done</button>
-        </div>
-    </main>
-    <script>
-        // Call the load_tasks function when the page loads
-        window.onload = function() {
-            load_tasks();
-        };
-    </script>
-    <noscript>Page requires Javascript to load tasks</noscript>
-</body>
+            <table class="task-list">
+                <!--Create the table headers-->
+                <tr>
+                    <th class="table-header">Done</th>
+                    <th class="table-header">Task</th>
+                    <th class="table-header">Due Date</th>
+                    <th class="table-header">Priority</th>
+                </tr>
+                <!--For each task, use tr to add row-->
+                <!-- <tr> NOT NEEDED - Commented out
+                    <td class="check-box" onclick="remove_task()">
+                        <input type="checkbox" id="check"/>
+                    </td>
+                    <td class="task-name"></td>
+                    <td class="due-date"></td>
+                    <td class="priority"></td>
+                </tr> -->
+            </table>
+            <!-- New Task Button -->
+            <button class="add-row" onclick="new_task()">+</button>
+            <!-- Options/Customize Task that will be added -->
+            <div class="new-task-row">
+                <input type="text" id="form-name" placeholder="Enter task name">
+                <input type="date" id="form-date">
+                <select id="form-priority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <!-- Add a Task Button -->
+                <button onclick="add_task()">Done</button>
+            </div>
+        </main>
+        <script>
+            // Call the load_tasks function when the page loads
+            window.onload = function() {
+                load_tasks();
+            };
+
+
+        </script>
+        <noscript>Page requires Javascript to load tasks</noscript>
+    </body>
 </html>
