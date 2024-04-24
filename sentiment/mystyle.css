@@ -1,0 +1,17 @@
+
+
+fieldset {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    width: 60%;
+
+}
+
+.radio-button{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
