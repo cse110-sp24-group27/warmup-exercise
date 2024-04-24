@@ -1,0 +1,6 @@
+.new-task-row {
+    display: none; /* will turn to flex on button click */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}

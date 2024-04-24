@@ -10,6 +10,7 @@
     <header>
         <h1>Task List</h1>
     </header>
+    <script src="script.js"></script>
     <main>
         <!--Create a table for the task list-->
         <!--Mark as completed | Task Name | Due Date | Priority-->
@@ -31,7 +32,17 @@
                 <td class="priority"></td>
             </tr>
         </table>
-        <button class="add-row">+</button>
+        <button class="add-row" onclick="new_task()">+</button>
+        <div class="new-task-row">
+            <input type="text" id="form-name" placeholder="Enter task name">
+            <input type="date" id="form-date">
+            <select id="form-priority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button onclick="add_task()">Done</button>
+        </div>
     </main>
 </body>
 </html>
