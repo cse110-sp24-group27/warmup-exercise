@@ -1,0 +1,45 @@
+[
+    {
+      "checkbox": false,
+      "task_name": "Design UI wireframes",
+      "due_date": "2024-04-15",
+      "priority": "High"
+    },
+    {
+      "checkbox": false,
+      "task_name": "Set up project structure",
+      "due_date": "2024-04-20",
+      "priority": "High"
+    },
+    {
+      "checkbox": true,
+      "task_name": "Create HTML/CSS layout",
+      "due_date": "2024-04-25",
+      "priority": "Medium"
+    },
+    {
+      "checkbox": false,
+      "task_name": "Implement JavaScript functionality",
+      "due_date": "2024-04-30",
+      "priority": "High"
+    },
+    {
+      "checkbox": false,
+      "task_name": "Add local storage for data persistence",
+      "due_date": "2024-05-05",
+      "priority": "Medium"
+    },
+    {
+      "checkbox": false,
+      "task_name": "Test and debug application",
+      "due_date": "2024-05-10",
+      "priority": "High"
+    },
+    {
+      "checkbox": false,
+      "task_name": "Style and polish user interface",
+      "due_date": "2024-05-15",
+      "priority": "Medium"
+    }
+  ]
+  
