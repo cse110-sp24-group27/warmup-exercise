@@ -27,12 +27,55 @@ fieldset {
     
 }
 /*set the star*/
-.rating label:before{
+.rating label:after{
     content: '\2605';
+    font-size: 100px;
 }
-/*add a star before the option circle*/
+/* Scale form based on screen size */
+@media (max-width: 1000px) {
+    form {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
-.rating label:hover{
-    color: yellow;
+    legend {
+        font-size: calc(0.8vw + 0.8vh);
+    }
+
+    .radio-button {
+        width: calc(5vw + 6vh);
+        height: calc(2vw + 2vh);
+    }
+
+    .rating {
+        margin-left: 5%;
+        margin-right: 5%
+    }
+
+    .rating label:after {
+        font-size: calc(3vw + 3vh);
+    }
+
+    input[name=sentiment] {
+        width: calc(0.8vw + 0.8vh);
+        height: calc(0.8vw + 0.8vh);
+    }
+
+    .radio-button label {
+        font-size: calc(0.75vw + 0.75vh);
+    }
 }
-/*if hover the star will change to yellow.*/
+
+/* Align two rowws */
+body {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
