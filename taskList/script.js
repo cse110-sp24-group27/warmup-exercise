@@ -1,29 +1,36 @@
 function get_row_from_data(checkbox, task_name, due_date, priority) {
+    // Creates Row
     const row = document.createElement('tr');
 
+    // Create Check Box to be placed under "Done" column.
     const checkboxCell = document.createElement('td');
     checkboxCell.classList.add('check-box');
+    checkboxCell.onclick = remove_task; // Added the click functionality
     const checkboxInput = document.createElement('input');
     checkboxInput.type = 'checkbox';
-    checkboxInput.checked = checkbox;
+                                                                // checkboxInput.checked = checkbox; This was checking a box - commented it out
     checkboxCell.appendChild(checkboxInput);
     row.appendChild(checkboxCell);
 
+    // Create Task to be placed under "Task" column.
     const taskNameCell = document.createElement('td');
     taskNameCell.classList.add('task-name');
     taskNameCell.textContent = task_name;
     row.appendChild(taskNameCell);
-    
+
+    // Create Due Date to be placed under "Due Date" column.
     const dueDateCell = document.createElement('td');
     dueDateCell.classList.add('due-date');
     dueDateCell.textContent = due_date;
     row.appendChild(dueDateCell);
-    
+
+    // Create Priority to be placed under "Priority" column.
     const priorityCell = document.createElement('td');
     priorityCell.classList.add('priority');
     priorityCell.textContent = priority;
     row.appendChild(priorityCell);
-    
+
+    // Return the whole row to be added to the list.
     return row;
 }
 
@@ -35,9 +42,9 @@ function load_tasks() {
             console.log(taskListTable); //debug line, checking on json data
 
             tasks.forEach(task => {
-                //for each task, create row <tr>, create other <td> elements to added to row. finally append row to the taskListTable
+                // For each task, 1) create row <tr>, 2) create <td> elements to add, 
                 const row = get_row_from_data(task.checkbox, task.task_name, task.due_date, task.priority)
-                
+                // 3) Add row to taskListTable
                 taskListTable.appendChild(row);
             });
         })
@@ -46,8 +53,8 @@ function load_tasks() {
         });
 }
 
-
 function new_task() {
+    // Fetch data to build the new task
     const form = document.querySelector('.new-task-row');
     form.style.display = (form.style.display === 'flex' ? 'none' : 'flex'); // Toggle display
 }
@@ -65,4 +72,10 @@ function add_task() {
     const row = get_row_from_data(false, taskName, taskDate, taskPriority);
     taskListTable.appendChild(row);
     
+}
+
+// Mark as Completed //
+function remove_task() {
+    console.log('Box was Checked!');    
+    this.remove();
 }
