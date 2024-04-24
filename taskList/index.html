@@ -8,8 +8,30 @@
 </head>
 <body>
     <header>
+        <h1>Task List</h1>
     </header>
     <main>
+        <!--Create a table for the task list-->
+        <!--Mark as completed | Task Name | Due Date | Priority-->
+        <!--At the last row of the table, an add button for adding a new task-->
+
+        <table class="task-list">
+            <!--Create the table headers-->
+            <tr>
+                <th class="table-header">Done</th>
+                <th class="table-header">Task</th>
+                <th class="table-header">Due Date</th>
+                <th class="table-header">Priority</th>
+            </tr>
+            <!--For each task, use tr to add row-->
+            <tr>
+                <td class="check-box"><input type="checkbox"/></td>
+                <td class="task-name"></td>
+                <td class="due-date"></td>
+                <td class="priority"></td>
+            </tr>
+        </table>
+        <button class="add-row">+</button>
     </main>
 </body>
 </html>
