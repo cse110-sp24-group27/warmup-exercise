@@ -12,7 +12,7 @@
       "priority": "High"
     },
     {
-      "checkbox": false,
+      "checkbox": true,
       "task_name": "Create HTML/CSS layout",
       "due_date": "2024-04-25",
       "priority": "Medium"
