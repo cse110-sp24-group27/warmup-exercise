@@ -13,25 +13,23 @@ fieldset {
 
 }
 
-.radio-button{
+/* Set radio buttons */
+.radio-button {
     display: flex;
     align-items: center;
     margin-right: 15px;
     cursor: pointer;
 }
 
-.rating input{
-    display: none;
-}
 /*Remove the option circle*/
-.rating label{
+.rating label {
     
     font-size: 10mm;
     margin:0;
     
 }
-/*set the star*/
-.rating label:after{
+/* Set the star */
+.rating label:after {
     content: '\2605';
     font-size: 100px;
 }
@@ -70,7 +68,7 @@ fieldset {
     }
 }
 
-/* To align */
+/* To align star with buttons*/
 .rating {
     display: flex;
     justify-content: space-around;
