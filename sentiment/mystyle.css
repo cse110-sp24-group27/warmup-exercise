@@ -2,10 +2,14 @@
 
 fieldset {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     align-items: center;
     border-radius: 8px;
-    width: 60%;
+    /* width: 60%; */
+
+    /* To align */
+    justify-content: space-around;
+    width: auto;
 
 }
 
@@ -66,16 +70,10 @@ fieldset {
     }
 }
 
-/* Align two rowws */
-body {
-    display: grid;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    align-items: center;
+/* To align */
+.rating {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
 }
-
-
-
-
-
 
