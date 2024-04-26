@@ -1,3 +1,4 @@
+// get access to the radio buttons and labels
 const button1 = document.getElementById('1');
 const label1 = document.querySelector('#label1');
 const button2 = document.getElementById('2');
@@ -8,6 +9,7 @@ const button4 = document.getElementById('4');
 const label4 = document.querySelector('#label4');
 const button5 = document.getElementById('5');
 const label5 = document.querySelector('#label5');
+// listeners that checks when a button is pressed and changes the color of the respective stars
 button1.addEventListener('change', () => {
     if (button1.checked) {
         label1.style.color = 'yellow';
@@ -53,25 +55,3 @@ button5.addEventListener('change', () => {
         label5.style.color = 'yellow';
     }
 });
-
-// testing-Josh
-
-// function highlightStars(rating) {
-//     for (let i = 1; i <= 5; i++) {
-//         const label = document.getElementById('label' + i);
-//         if (i <= rating) {
-//             label.classList.add('highlight');
-//         } else {
-//             label.classList.remove('highlight');
-//         }
-//     }
-// }
-
-// document.querySelectorAll('input[name="stars"]').forEach((radio) => {
-//     radio.addEventListener('change', function() {
-//         const rating = parseInt(this.value);
-//         highlightStars(rating);
-//     });
-// });
-
-//testing-Josh(It seems like there isn't an easy way to do the connecting thing in CSS)
