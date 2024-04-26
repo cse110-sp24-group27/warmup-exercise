@@ -1,7 +1,7 @@
 # Task List Documentation
 
 ## Summary
-
+Task List designed for optimal and accesible functionality, paired with a color pallete easy to the eyes. Features include task creation, collecting user input on the name of the task, date, as well as its priority. Checkbox allowing for collection of completed tasks.
 
 ## Early Designs
 ![Brainstorming](screenshots/image.png)
@@ -18,8 +18,9 @@ Here are some ideas that we kept and discarded.
 
 ## Features
 ### **Simple** and **straight** design:
-![idle](assets/img1.png)
+![idle](screenshots/1.png)
 
 ### **Responds** to user selection:
-![select](assets/img2.png)
+![select](screenshots/2.png)
+![select2](screenshots/3.png)
 
