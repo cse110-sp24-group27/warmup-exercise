@@ -7,6 +7,19 @@ h1 {
   text-align: center;
   font-family: "Brush Script MT";
   font-size: 100px;
+  
+  /* Cool Neon Animation */
+  text-shadow:
+    0 0 4px #fff,  /* Inner white glow */
+    0 0 10px #ff0080, /* Reddish outer glow */
+    0 0 20px #ff0080; /* More intense reddish outer glow */
+  animation: glow 1.35s ease-in-out infinite alternate;
+}
+
+/* Neon Glow Animation */
+@keyframes glow {
+  from { text-shadow: 0 0 4px #fff, 0 0 10px #ff0080, 0 0 20px #ff0080; }
+  to   { text-shadow: 0 0 2px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080; }
 }
 
 .task-list {
@@ -62,12 +75,14 @@ table {
 }
 
 .task-name, #table-header-task {
-  width: 300px;
+  width: 50%;
 }
 
 /*The Add Button*/
 .add-row {
-  width: 650px;
+  position: relative;
+  left: 0.5em;
+  width: 50%;
   height: 4ex;
   background-color: white;
   border: 2px solid firebrick;
@@ -75,12 +90,8 @@ table {
   font-weight: bold;
   color: black;
   cursor: pointer;
-
-  
   display: block;
   margin: auto;
-
-  
 }
 
 
