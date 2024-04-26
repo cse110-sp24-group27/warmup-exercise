@@ -15,7 +15,6 @@
             <!--Create a table for the task list-->
             <!--Mark as completed | Task Name | Due Date | Priority-->
             <!--At the last row of the table, an add button for adding a new task-->
-
             <table class="task-list">
                 <!--Create the table headers-->
                 <tr class="table-header">
@@ -24,15 +23,6 @@
                     <th id="table-header-due">Due Date</th>
                     <th id="table-header-priority">Priority</th>
                 </tr>
-                <!--For each task, use tr to add row-->
-                <!-- <tr> NOT NEEDED - Commented out
-                    <td class="check-box" onclick="remove_task()">
-                        <input type="checkbox" id="check"/>
-                    </td>
-                    <td class="task-name"></td>
-                    <td class="due-date"></td>
-                    <td class="priority"></td>
-                </tr> -->
             </table>
             <!-- New Task Button -->
             <button class="add-row" onclick="new_task()">+</button>
@@ -54,8 +44,6 @@
             window.onload = function() {
                 load_tasks();
             };
-
-
         </script>
         <noscript>Page requires Javascript to load tasks</noscript>
     </body>

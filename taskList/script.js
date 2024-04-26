@@ -6,14 +6,9 @@ function get_row_from_data(checkbox, task_name, due_date, priority) {
     const checkboxCell = document.createElement('td');
     checkboxCell.classList.add('check-box');
     const checkboxInput = document.createElement('input');
-    checkboxInput.type = 'checkbox';
-    
-    checkboxInput.checked = checkbox;
-    
-//either remove_task or cross_row when checkbox is clicked
-    // checkboxInput.addEventListener('change', remove_task);  
+    checkboxInput.type = 'checkbox';    
+    // either remove_task or cross_row when checkbox is clicked
     checkboxInput.addEventListener('change', cross_row);
-
     checkboxCell.appendChild(checkboxInput);
     row.appendChild(checkboxCell);
 
@@ -79,12 +74,6 @@ function add_task() {
     
 }
 
-// Mark as Completed //
-// function remove_task() {
-//     console.log('Box was Checked!');    
-//     this.remove();
-// }
-
 function remove_task(event) {
     const checkbox = event.target;
     if (checkbox.checked) {
@@ -96,8 +85,10 @@ function cross_row(event) {
     const checkbox = event.target;
     const row = checkbox.closest('tr');
     if (checkbox.checked) {
-        row.style.textDecoration = 'line-through'; // Apply line-through style if checkbox is checked
+         // Apply line-through style if checkbox is checked
+        row.style.textDecoration = 'line-through';
     }  else {
-        row.style.textDecoration = 'none'; // Remove line-through style if checkbox is unchecked
+        // Remove line-through style if checkbox is unchecked
+        row.style.textDecoration = 'none'; 
     }
 }
